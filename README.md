@@ -3,6 +3,8 @@ git@github.com:DanielMoralisSamples/Video_Tutorials.git
 
 set up Moralis server
 downoad ganache from https://www.trufflesuite.com/ganache
+make it excecutable:
+chmod a+x ganache-1.3.0-x86_64.AppImage
 connect Ganache to MetaMask (HTTP://127.0.0.1:7545 - 1337)
 
 
@@ -44,16 +46,23 @@ frpc.exe -c frpc.ini
 
 https://hardhat.org/getting-started/
 Install hardhat:
+
 npm init (npx create-react-app demo-app)
 npm install --save-dev hardhat
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+or
+first npm install to install node modules
 start local node:
 npx hardhat node
+connect to metamask
+connect to moralis through frpc
 
 Running tasks
 
 
 Install brownie
+
+
 requirements: nodejs + python
 python -m pip install --user pipx
 python -m pipx ensurepath
