@@ -69,3 +69,15 @@ python -m pipx ensurepath
 install brownie:
 apt-get install python3-venv
 pipx install eth-brownie
+
+add network
+brownie networks add Ethereum rinkeby_test host='https://speedy-nodes-nyc.moralis.io/e2bfe6d43f897c5ef0455cdc/eth/rinkeby' name="Eth Rinkeby Moralis" chainid=4 explorer='https://api-rinkeby.etherscan.io/api'
+brownie networks list
+brownie console --network rinkeby_test
+
+brownie pm install smartcontractkit/chainlink-brownie-contracts@1.0.2
+brownie pm install list
+brownie console --network rinkeby_test
+
+brownie accounts lit
+brownie account new <id> (then enter private key)
