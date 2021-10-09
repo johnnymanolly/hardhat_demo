@@ -1,0 +1,112 @@
+2021-10-09T03:50:53.164Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:50:57.863Z [] info: Contracts Controller request
+2021-10-09T03:50:57.864Z [] info: Getting ETH price..
+2021-10-09T03:50:57.863Z [] info: {}
+2021-10-09T03:50:58.683Z [] error: Unexpected error
+2021-10-09T03:50:58.683Z [] error: Unexpected error
+2021-10-09T03:50:58.688Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:50:58.688Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:53:43.491Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:53:49.044Z [] info: Contracts Controller request:
+2021-10-09T03:53:49.054Z [] info: Getting ETH price..
+2021-10-09T03:53:49.047Z [] info: {}
+2021-10-09T03:53:49.048Z [] info: calling service
+2021-10-09T03:53:49.964Z [] error: Service failed to get ETH price
+2021-10-09T03:53:49.964Z [] error: Service failed to get ETH price
+2021-10-09T03:53:49.966Z [] error: Unexpected error
+2021-10-09T03:53:49.966Z [] error: Unexpected error
+2021-10-09T03:53:49.964Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:53:49.964Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:53:49.964Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:53:49.964Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:54:05.914Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:54:06.210Z [] info: Contracts Controller request:
+2021-10-09T03:54:06.215Z [] info: Getting ETH price..
+2021-10-09T03:54:06.211Z [] info: {}
+2021-10-09T03:54:06.213Z [] info: calling service
+2021-10-09T03:54:06.969Z [] error: Service failed to get ETH price
+2021-10-09T03:54:06.969Z [] error: Service failed to get ETH price
+2021-10-09T03:54:06.970Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:54:06.970Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:54:46.582Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:54:46.772Z [] info: Contracts Controller request:
+2021-10-09T03:54:46.775Z [] info: Getting ETH price..
+2021-10-09T03:54:46.772Z [] info: {}
+2021-10-09T03:54:46.773Z [] info: calling service
+2021-10-09T03:54:47.572Z [] error: Service failed to get ETH price
+2021-10-09T03:54:47.572Z [] error: Service failed to get ETH price
+2021-10-09T03:54:47.574Z [] error: idd is not defined
+2021-10-09T03:54:47.574Z [] error: idd is not defined
+2021-10-09T03:55:25.936Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:55:30.151Z [] info: Contracts Controller request:
+2021-10-09T03:55:30.153Z [] info: Getting ETH price..
+2021-10-09T03:55:30.152Z [] info: {}
+2021-10-09T03:55:30.152Z [] info: calling service
+2021-10-09T03:55:30.994Z [] error: Service failed to get ETH price
+2021-10-09T03:55:30.994Z [] error: Service failed to get ETH price
+2021-10-09T03:55:30.995Z [] error: idd is not defined
+2021-10-09T03:55:30.995Z [] error: idd is not defined
+2021-10-09T03:56:06.123Z [] info: Up and running!! - mercury service - Server running at http://localhost:8000/
+2021-10-09T03:56:34.220Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T03:56:41.239Z [] info: Contracts Controller request:
+2021-10-09T03:56:41.252Z [] info: Getting ETH price..
+2021-10-09T03:56:41.243Z [] info: {}
+2021-10-09T03:56:41.250Z [] info: calling service
+2021-10-09T03:56:42.075Z [] info: network id: 4
+2021-10-09T03:56:42.075Z [] error: Service failed to get ETH price
+2021-10-09T03:56:42.075Z [] error: Service failed to get ETH price
+2021-10-09T03:56:42.076Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:56:42.076Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:58:48.822Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T03:58:52.123Z [] info: Contracts Controller request:
+2021-10-09T03:58:52.125Z [] info: Getting ETH price..
+2021-10-09T03:58:52.124Z [] info: {}
+2021-10-09T03:58:52.124Z [] info: calling service
+2021-10-09T03:58:52.986Z [] info: network id: 4
+2021-10-09T03:58:52.987Z [] error: Service failed to get ETH price
+2021-10-09T03:58:52.987Z [] error: Service failed to get ETH price
+2021-10-09T03:58:52.986Z [] info: PriceETHContract.networks
+2021-10-09T03:58:52.987Z [] info: undefined
+2021-10-09T03:58:52.988Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T03:58:52.988Z [] error: Cannot read properties of undefined (reading '4')
+2021-10-09T04:01:37.556Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T04:02:23.180Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T04:02:29.865Z [] info: Contracts Controller request:
+2021-10-09T04:02:29.871Z [] info: Getting ETH price..
+2021-10-09T04:02:29.869Z [] info: {}
+2021-10-09T04:02:29.870Z [] info: calling service
+2021-10-09T04:02:30.746Z [] info: network id: 4
+2021-10-09T04:02:30.785Z [] info: eth price
+2021-10-09T04:02:30.786Z [] info: {}
+2021-10-09T04:03:06.492Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T04:03:29.476Z [] info: Contracts Controller request:
+2021-10-09T04:03:29.483Z [] info: Getting ETH price..
+2021-10-09T04:03:29.482Z [] info: {}
+2021-10-09T04:03:29.483Z [] info: calling service
+2021-10-09T04:03:30.301Z [] info: network id: 4
+2021-10-09T04:03:30.488Z [] info: eth price
+2021-10-09T04:03:30.490Z [] info: 360531996119
+2021-10-09T04:04:47.912Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T04:04:49.482Z [] info: Contracts Controller request:
+2021-10-09T04:04:49.493Z [] info: Getting ETH price..
+2021-10-09T04:04:49.484Z [] info: {}
+2021-10-09T04:04:49.493Z [] info: calling service
+2021-10-09T04:04:50.265Z [] info: network id: 4
+2021-10-09T04:04:50.423Z [] info: eth price
+2021-10-09T04:04:50.424Z [] info: 3605.31996119
+2021-10-09T04:04:56.118Z [] info: Contracts Controller request:
+2021-10-09T04:04:56.120Z [] info: Getting ETH price..
+2021-10-09T04:04:56.119Z [] info: {}
+2021-10-09T04:04:56.119Z [] info: calling service
+2021-10-09T04:04:56.879Z [] info: network id: 4
+2021-10-09T04:04:57.052Z [] info: eth price
+2021-10-09T04:04:57.053Z [] info: 3605.31996119
+2021-10-09T04:05:09.107Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/
+2021-10-09T04:05:11.841Z [] info: Contracts Controller request:
+2021-10-09T04:05:11.844Z [] info: Getting ETH price..
+2021-10-09T04:05:11.841Z [] info: {}
+2021-10-09T04:05:11.843Z [] info: calling service
+2021-10-09T04:05:12.613Z [] info: network id: 4
+2021-10-09T04:05:12.793Z [] info: eth price
+2021-10-09T04:05:12.794Z [] info: 3605.31996119
+2021-10-09T04:06:16.504Z [] info: Up and running!! - contracts interaction service - Server running at http://localhost:8000/

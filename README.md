@@ -52,6 +52,7 @@ npm install --save-dev hardhat
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
 or
 first npm install to install node modules
+sudo npm install -g --force nodemon
 start local node:
 npx hardhat node
 connect to metamask
@@ -61,12 +62,9 @@ Running tasks
 
 
 Install brownie
-
-
 requirements: nodejs + python
 python -m pip install --user pipx
 python -m pipx ensurepath
-install brownie:
 apt-get install python3-venv
 pipx install eth-brownie
 
@@ -74,14 +72,21 @@ add network
 brownie networks add Ethereum rinkeby_test host='https://speedy-nodes-nyc.moralis.io/e2bfe6d43f897c5ef0455cdc/eth/rinkeby' name="Eth Rinkeby Moralis" chainid=4 explorer='https://api-rinkeby.etherscan.io/api'
 brownie networks list
 
-sudo snap install solc
-brownie console --network rinkeby_test
-
-brownie accounts lit
+brownie accounts list
 brownie account new <id> (then enter private key)
 
 brownie pm install smartcontractkit/chainlink-brownie-contracts@1.0.2
 brownie pm install list
+
+sudo snap install solc
 brownie console --network rinkeby_test
 
+# ETH Price Feed (price_feed.sol)
+import ETH account from rinkeby test network
+account = accounts.load("rinkeby_account")
 
+deploy contract from imported account
+Price_ETH.deploy({'from': account})
+
+get ETH price
+Price_ETH[0].getThePrice()/10**8
