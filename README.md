@@ -3,6 +3,8 @@ git@github.com:DanielMoralisSamples/Video_Tutorials.git
 
 set up Moralis server
 downoad ganache from https://www.trufflesuite.com/ganache
+make it excecutable:
+chmod a+x ganache-1.3.0-x86_64.AppImage
 connect Ganache to MetaMask (HTTP://127.0.0.1:7545 - 1337)
 
 
@@ -44,19 +46,42 @@ frpc.exe -c frpc.ini
 
 https://hardhat.org/getting-started/
 Install hardhat:
+
 npm init (npx create-react-app demo-app)
 npm install --save-dev hardhat
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+or
+first npm install to install node modules
 start local node:
 npx hardhat node
+connect to metamask
+connect to moralis through frpc
 
 Running tasks
 
 
 Install brownie
+
+
 requirements: nodejs + python
 python -m pip install --user pipx
 python -m pipx ensurepath
 install brownie:
 apt-get install python3-venv
 pipx install eth-brownie
+
+add network
+brownie networks add Ethereum rinkeby_test host='https://speedy-nodes-nyc.moralis.io/e2bfe6d43f897c5ef0455cdc/eth/rinkeby' name="Eth Rinkeby Moralis" chainid=4 explorer='https://api-rinkeby.etherscan.io/api'
+brownie networks list
+
+sudo snap install solc
+brownie console --network rinkeby_test
+
+brownie accounts lit
+brownie account new <id> (then enter private key)
+
+brownie pm install smartcontractkit/chainlink-brownie-contracts@1.0.2
+brownie pm install list
+brownie console --network rinkeby_test
+
+
