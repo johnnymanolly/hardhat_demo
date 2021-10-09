@@ -2,16 +2,15 @@
 Moralis.initialize("QI027pVYhNMbNQ2ZXg01qw0LoQZTxCoko9WXXH2o");
 Moralis.serverURL = 'https://ptfpsokkach2.grandmoralis.com:2053/server';
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
     const currentUser = Moralis.User.current();
     if (currentUser) {
-       
+
         const username_display = currentUser.attributes.username;
         document.getElementById("username_display").innerText = username_display;
 
         loggedInDisplay();
-       
+
     }
     else {
         loggeOutDisplay();
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 function loggedInDisplay() {
     document.getElementById("logout_btn").style.display = "block";
     document.getElementById("logged_in_as").style.display = "block";
-   
+
     document.getElementById("choose_username").style.display = "none";
     document.getElementById("login_btn").style.display = "none";
     document.getElementById("username_input").style.display = "none";
@@ -30,12 +29,22 @@ function loggedInDisplay() {
 function loggeOutDisplay() {
     document.getElementById("logout_btn").style.display = "none";
     document.getElementById("logged_in_as").style.display = "none";
-    
+
     document.getElementById("choose_username").style.display = "block";
     document.getElementById("login_btn").style.display = "block";
     document.getElementById("username_input").style.display = "block";
 }
 
+async function fetchItems() {
+    const params = {};
+    try {
+        const response = await Moralis.Cloud.run('getItems', params);
+
+    } catch (error) {
+        const code = error.code;
+        const message = error.message;
+    }
+}
 
 function login() {
     const currentUser = Moralis.User.current();
@@ -46,7 +55,7 @@ function login() {
         alert("you are already logged in");
     } else {
         // show the signup or login page
-        Moralis.authenticate({signingMessage:"Welcome to our casino!"}).then(function (user) {
+        Moralis.authenticate({ signingMessage: "Welcome to our casino!" }).then(function (user) {
             const username = document.getElementById("username_input").value;
             user.set("username", username);
             user.save();
@@ -55,63 +64,51 @@ function login() {
             document.getElementById("username_display").innerText = username_display;
             loggedInDisplay();
 
-            const params =  {
-                
-            };
-            try {
-                const response = await Moralis.Cloud.run('getItems', params);
-                
-            } catch (error) {
-                const code = error.code;
-                const message = error.message;
-            }
+            fetchItems();
         })
     }
 }
 
-function getAllERC20() {
+async function getAllERC20() {
     const balances = await Moralis.web3.getAllERC20();
-    const balances = await Moralis.web3.getAllERC20({address : ""});
+    const AddBalances = await Moralis.web3.getAllERC20({ address: "" });
 }
 
-function showUser(){
+function showUser() {
     const user = Moralis.User.current();
     console.log(user);
 }
 
-async function logout(){
-    await Moralis.User.logOut().then(function (msg){
+async function logout() {
+    await Moralis.User.logOut().then(function (msg) {
         loggeOutDisplay();
     });
 }
 
-async function listenToUpdates(){
+async function listenToUpdates() {
     const query = new Moralis.Query('EthTransactions');
     const subscription = await query.subscribe();
 
-    subscription.on("create", function(object){
+    subscription.on("create", function (object) {
         console.log("new Transaction");
         console.log(object);
     })
+
+}
+
+function getEthPrice() {
     
 }
 
 Moralis.onAccountsChanged(async function (accounts) {
     const confirmed = confirm('Link this address to your account?');
     if (confirmed) {
-      await Moralis.link(accounts[0]);
-      alert('Address added!');
+        await Moralis.link(accounts[0]);
+        alert('Address added!');
     }
-  });
+});
 
-  Moralis.Cloud.define('getItems', async (request) => {
-      const query = new Moralis.Query('Item');
-      const results = await query.find();
-      return results;
-      
-  });
 
-  
 // signup by email
 
 /*
